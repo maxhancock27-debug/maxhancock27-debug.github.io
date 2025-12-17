@@ -78,7 +78,7 @@ body {
 /* ===== VIDEO EMBED ===== */
 .video iframe {
   width: 100%;
-  height: 315px;
+  height: 600px;
   border-radius: 8px;
 }
 
