@@ -3,36 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Car Detailing – From Scratch Page</title>
+  <title>Car Detailing – Scratch Page</title>
 
-  <!-- Custom stylesheet created from scratch -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom stylesheet -->
   <link rel="stylesheet" href="css/scratch.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Max Hancock</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
-        <li class="nav-item"><a class="nav-link active" href="scratch.html">Scratch Page</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-  <!-- ===== HEADER DIV ===== -->
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Max Hancock</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+          <li class="nav-item"><a class="nav-link active" href="scratch.html">Scratch Page</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HEADER ===== -->
   <div class="header" id="top">
     <h1>My Passion for Car Detailing</h1>
-    <p>Car detailing has been my college job. I have loved being able to provide my customers with a great experience and make them happier in the process.</p>
+    <p>Car detailing has been my college job. I have loved providing my customers with a great experience and making them happier in the process.</p>
     <a href="#tableau">Jump to Tableau Visualization</a>
   </div>
 
-  <!-- ===== CONTENT DIV ===== -->
+  <!-- ===== CONTENT SECTION ===== -->
   <div class="content">
     <h2>What Goes Into a Quality Detail?</h2>
 
@@ -47,7 +52,7 @@
       </li>
       <li>Interior Services
         <ul>
-          <li>Vacuuming and shampooing carpets and seats </li>
+          <li>Vacuuming and shampooing carpets and seats</li>
           <li>Leather conditioning</li>
           <li>Odor elimination/disinfecting surfaces</li>
         </ul>
@@ -55,39 +60,78 @@
     </ol>
 
     <!-- Image not from Bootstrap -->
-    <img src="IMG_0114.jpeg" alt="On the Job with Sunny Car Detailing" />
+    <div class="image">
+      <h2>On the Job</h2>
+      <img src="IMG_0114.jpeg" alt="On the Job with Sunny Car Detailing" class="img-fluid tableau-style">
+    </div>
 
     <h2>Why Detailing Matters</h2>
     <p>
-      Proper detailing preserves vehicle value, improves driving comfort, and reduces the anxious and stress of having to get in a dirty car. I have learned that a clean car means a happy wife.
+      Proper detailing preserves vehicle value, improves driving comfort, and reduces stress caused by a dirty car. I have learned that a clean car makes everyone happier.
     </p>
 
     <!-- Embedded YouTube video -->
-   <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/hNXOY7uWljY"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+    <div class="video">
+      <h2>Video: Mobile Car Detailing in Action</h2>
+      <iframe src="https://www.youtube.com/embed/hNXOY7uWljY" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+    </div>
 
+    <!-- ===== TABLEAU SECTION ===== -->
+    <div class="tableau" id="tableau">
+      <h2>Growing Mobile Car Detailing Market</h2>
+      <div class='tableauPlaceholder' id='viz1766010157702' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Growing Mobile Car Detailing Market with Future Projections' 
+                 src='https://public.tableau.com/static/images/Mo/MobileCarDetailingMarket/Sheet1/1_rss.png' 
+                 style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='MobileCarDetailingMarket/Sheet1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Mo/MobileCarDetailingMarket/Sheet1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1766010157702');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
 
-  <!-- ===== TABLEAU DIV ===== -->
-  <div class="tableau" id="tableau">
+    <!-- ===== DICE GAME BUTTON ===== -->
+    <div class="game">
+      <h2>Try a Fun Game!</h2>
+      <a href="dice-game.html" class="btn btn-success btn-lg" target="_blank">Roll Some Dice</a>
+    </div>
 
-    <!-- Live embedded Tableau visualization -->
-    <div class='tableauPlaceholder' id='viz1766010157702' style='position: relative'><noscript><a href='#'><img alt='Growing Mobile Car Detailing Market with Future Projections ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MobileCarDetailingMarket&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MobileCarDetailingMarket&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MobileCarDetailingMarket&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1766010157702');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-  <!-- ===== NAV DIV ===== -->
-  <div class="nav">
-    <a href="index.html">Back to Professional Site</a>
+    <!-- ===== BACK TO PROFESSIONAL SITE ===== -->
+    <div class="nav">
+      <a href="index.html">Back to Professional Site</a>
+    </div>
   </div>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-    <section class="game my-5 text-center">
-  <h2>Try a Fun Game!</h2>
-  <a href="dice_game_html.html" class="btn btn-success btn-lg" target="_blank">Roll Some Dice</a>
-</section>
-
